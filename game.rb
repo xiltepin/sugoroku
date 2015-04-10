@@ -27,7 +27,9 @@ class Game
 
 	def start()
 		@player_ary.each do |player|
+			p "player '#{player.name}' rolled dice"
 			 player.roll_dice
+
 		end
 	end
 

@@ -10,8 +10,9 @@ class Dice
 
 	end
 
-	def roll(value)
+	def roll
 		@dice_value = Random.rand(1...6)
+		p "value of rolled dice is '#{@dice_value}'"
 	end
 
 end
