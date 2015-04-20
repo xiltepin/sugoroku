@@ -1,6 +1,6 @@
 require './dice.rb'
 class Dice
-	attr_accessor :dice_value
+	attr_reader :dice_value
 
 	def initialize
 
@@ -12,7 +12,6 @@ class Dice
 
 	def roll
 		@dice_value = Random.rand(1...6)
-		p "value of rolled dice is '#{@dice_value}'"
 	end
 
 end
